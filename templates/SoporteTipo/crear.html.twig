@@ -1,0 +1,16 @@
+{% extends ('base.html.twig') %}
+
+{% block title %}
+Crear Soporte
+{% endblock %}
+
+{% block body %}
+ <h1>Crear soporte</h1>
+ {{ form_start(form_soporte_tipo) }}
+    {{ form_row(form_soporte_tipo.descripcion)}}
+    {{ form_row(form_soporte_tipo.complejidad)}}
+    {{ form_widget(form_soporte_tipo.submit)}}
+{{ form_end(form_soporte_tipo) }}
+
+
+ {% endblock %}
